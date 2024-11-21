@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /merchant-app
+
+spring:
+  application:
+    name: ms-merchant
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/MERCHANT_DB
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  rabbit:
+    spring:
+      rabbitmq:
+        dynamic=true:
+    host: localhost
+    port: 15672
+    username: guest
+    password: guest

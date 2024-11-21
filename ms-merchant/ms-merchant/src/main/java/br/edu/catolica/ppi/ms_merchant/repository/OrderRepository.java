@@ -1,0 +1,7 @@
+package br.edu.catolica.ppi.ms_merchant.repository;
+
+import br.edu.catolica.ppi.ms_merchant.domain.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderRepository extends JpaRepository<Order, Long> {
+}
